@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+   
+}
+a{
+    display:block;
+
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+   
+}
+/*   HEADER   */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-height: 20%;
+    padding: 16px;
+    background-color: #212121;  
+}
+     .menu{
+        display: flex;
+        justify-content: center;
+    }
+      .menu li{
+            margin-right:16px ;
+            font-size: 1.05em;
+         
+      }
+       .menu li a{
+           padding: 8px;
+           color: white;
+           
+       }
+       .menu li a:hover{
+           color: #FFC700;
+           transition: .3s ease;
+       }
+       .menu-left{
+           display: flex;
+          align-items: center;
+       }
+            .logo{
+                font-size: 2em;
+                color: white;
+                margin-right: 72px;
+            }
+            .logo span{
+            color: #FFC700;
+        }
+            header input{
+                border: none;
+                padding: 4px;
+
+                background-color: #212121;
+                color:#A8A8A8;
+                font-family: 'Poppins', sans-serif;
+            }
+            header svg{
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+                color: #a8a8a8;
+               
+            }
+      .menu-right{
+        display: flex;
+        align-items: center;
+    }
+            .profile{
+                width: 40px;
+                height: 40px;
+                background-color: gray;
+                
+            }
+            .profile img{
+            max-width: 40px;
+            
+
+            }
+            #triangle-down{
+                width: 0;
+                height: 0;
+
+                margin-left: 8px;
+                border-left:6px solid transparent ;
+                border-right:6px solid transparent ;
+                border-top: 12px solid white;
+            }
+            #triangle-down:hover{
+                border-top: 12px solid #FFC700 ;
+                transition: .3s ease;
+                cursor: pointer;
+            }
+  
+
+       /* BANNER */
+
+       #banner{
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+         height: 100vh;
+
+           background: no-repeat center/cover url(Imagens/Frame\ 1.svg);
+       }
+       #title{
+           font-size: 4em;
+           color: white;
+           margin-bottom: 32px;
+       }
+       .book-description{
+           max-width: 400px;
+           line-height: 1.8;
+       }
+       .book-description p{
+           color: white;
+           font-size: 1.1em;
+       }
+       .action-button button{
+            width: 150px;
+           margin-top: 32px;
+           font-size: 1.1em;
+          
+           background-color: transparent;
+           border: 2px solid white;
+           border-radius: 3px;
+       }
+     
+       .action-button a{
+           padding: 8px;
+           color: black;
+           background-color: white;
+       }
+       .book-description button a:hover{
+           background-color: transparent;
+           color: white;
+           transition: .3s ease;
+       }
+     
+       #favorite{
+          position: relative;
+           top: 3px;
+
+           width: 50px;
+           height: 46px;
+           border-radius: 3px;
+           
+       }
+       #favorite svg{
+           position: relative;
+           top: 2px;
+
+           width: 20px;
+           height: 22px;
+           color: white;
+       }
+       #favorite svg:hover{
+           transform: scale(1.3);
+           transition: .4s ease;
+       }
+       .book-image img{
+           height: 70vh;
+       }
+
+       /* CARDS*/
+       #cards{
+           display: flex;
+           justify-content: space-around;
+          
+           padding: 32px;
+           background-color: #212121;
+       }
+       .card-item{
+           display: flex;
+           flex-direction: column;
+       }
+       .card-item p{
+        font-size: 1.3em;
+        margin-top: 8px;
+        color: white;
+    }
+       .title-bar{
+           width: 80px;
+           height: 3px;
+           margin: 8px 0 32px 0;
+
+           background-color:white;    
+       }
+       .card-item button{
+        align-self: center;
+
+        width: 150px;
+        height: 40px;
+       
+        border: 2px solid white;
+        margin-top:24px ;
+        border-radius: 3px;
+
+        background-color: transparent;
+
+    }
+       .card-item button a{
+           padding: 8px;
+       }
+    
+       .card-item button a:hover{
+           background-color: white;
+           color: black;
+           transition: .3s ease;
+       }
+
+       /*FOOTER*/
+       footer{
+           padding: 64px;
+           background-color: #363636;
+       }
+            .menu-top{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .networking{
+                display: flex;
+            }
+            .social{
+                width: 40px;
+                height: 40px;
+
+                border-radius: 50px;
+                margin-right: 8px;
+
+                background-color: #272727;      
+            }
+            .social svg{
+                position: relative;
+                top: 8px;
+                left: 8px;
+
+                color: white;
+                
+            }
+            .quote{
+                font-family: 'Dancing Script', cursive;
+                font-size: 1.4em;
+
+                color: white;
+            }
+       .middle-bar{
+           width: 100%;
+           height: 2px;
+           margin: 24px 0;
+
+           background-color: white;
+       }
+      .menu-bottom{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+      }
+            .logo-footer{
+                color: white;
+                font-size: 1.5em;
+            }
+                .logo-footer span{
+                    color: #FFC700;
+                }
+            .help-menu ul{
+                display: flex;
+            }
+                .help-menu ul li{
+                    margin-right: 16px;
+                }
+                .help-menu li a{
+                    padding: 8px;
+                }
+                .help-menu li a:hover{
+                    color: #FFC700;
+                    transition: .3s ease;
+                }
+
+         /* RESPONSIVIDADE*/
+         @media screen  and (max-width:550px){
+               body{
+                   position: relative;
+               }
+               .menu{
+                   position: fixed;
+                   bottom: 0;
+                   left: 0;
+                   right: 0;
+
+                   padding: 8px;
+                   background-color: #4e4e4e;
+
+                   z-index: 99;       
+               }
+               .menu li{
+                   margin: 8px;
+               }
+               .menu-top{
+                   display: flex;
+                   flex-direction: column;
+               }
+               .networking{
+                   margin-bottom: 24px;
+               }
+               .quote{
+                   font-size: 1.1em;
+               }
+               .menu-bottom{
+                   display: flex;
+                   flex-direction: column;
+               }
+              .logo-footer{
+                  margin-bottom: 16px;
+              }
+              .help-menu{
+                  margin-bottom: 24px;
+              }
+          .card-item button{
+              height: 48px;
+          }
+          .card-item button a{
+              padding: 12px;
+          }
+            
+         }
+
+
+         @media screen  and (max-width:790px){
+           
+             .menu li{
+                 font-size: .85em;
+                 margin-right: 8px;
+             }
+             header input{
+                 max-width: 100px;
+             }
+             .logo{
+                 margin-right: 40px;
+             }
+             #banner{
+                display: flex;
+                flex-direction: column;
+                padding: 16px;
+            }
+            #title{
+                font-size: 3em;
+            }
+            .book-description{
+                display: flex;
+                flex-direction: column;
+                align-items:center ;
+            }
+            .book-description p{
+              max-width: 280px;
+                font-size: .9em;
+            }
+            .book-image img{
+                max-width: 300px;
+                max-height: 300px;
+                margin-top: 16px;         
+            }
+            .action-button button{
+                width: 150px;
+                margin-top: 32px;
+               
+                border: 2px solid white;
+                border-radius: 3px;
+
+                font-size: 1em;
+                background-color: transparent;
+            }
+            #favorite{
+                position: relative;
+                top: 4px;
+                
+                 width: 50px;
+                 height: 45px;
+                 border-radius: 3px;
+                 
+             }
+             .card-item{
+                 margin-bottom: 32px;
+             }
+             .card-item button{
+                 margin-top: 24px;
+             }
+             .title-bar{
+                 margin-bottom: 40px;
+             }
+             
+             .networking{
+                 margin-right: 16px;
+             }
+         }
+         @media  screen and (max-width:970px){
+                #banner{
+                    padding: 24px;
+                }
+                .book-image{
+                    margin-left: 16px;
+                }
+                .book-image img{
+                    height: 60vh;
+
+                }
+
+               #cards{
+                      flex-wrap: wrap;
+               }
+               #card:nth-child(3){
+                   margin-top: 16px;
+               }
+         }
